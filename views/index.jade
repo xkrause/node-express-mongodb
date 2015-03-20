@@ -1,0 +1,64 @@
+extends layout
+
+block content
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #contactInfo
+            h2 Contact Info
+            p
+                strong First:
+                |  <span id='contactInfoFirst'></span>
+                br
+                strong Last:
+                |  <span id='contactInfoLast'></span>
+                br
+                strong Title:
+                |  <span id='contactInfoTitle'></span>
+                br
+                strong Company:
+                |  <span id='contactInfoCompany'></span>
+                br
+                strong Email:
+                |  <span id='contactInfoEmail'></span>
+                br
+                strong Met:
+                |  <span id='contactInfoMet'></span>
+                br
+                strong Date:
+                |  <span id='contactInfoDate'></span>
+                br
+                strong Comments:
+                |  <span id='contactInfoComments'></span>
+        // /USER INFO
+        // USER LIST
+        h2 Contact List
+        #contact
+            table
+                thead
+                    th First
+                    th Last
+                    th Delete?
+                tbody
+        // /USER LIST
+        // ADD USER
+        h2 Add Contact
+        #addcontact
+            fieldset
+                input#inputcontactFirst(type='text', placeholder='First')
+                input#inputcontactLast(type='text', placeholder='Last')
+                br
+                input#inputcontactTitle(type='text', placeholder='Title')
+                input#inputCompany(type='text', placeholder='Company')
+                br
+                input#inputcontactCompany(type='text', placeholder='Email')
+                input#inputcontactMet(type='text', placeholder='Met')
+                br
+                input#inputcontactDate(type='text', placeholder='Date')
+                input#inputcontactComments(type='text', placeholder='Comments')
+                br
+                button#btnAddcontact Add Contact
+        // /ADD USER
+    // /WRAPPER
